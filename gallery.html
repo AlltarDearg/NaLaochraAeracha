@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Na Laochra Aeracha</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gallery - Na Laochra Aeracha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #ff0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Top Banner -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Na Laochra Aeracha</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Include Header -->
+    <div class="banner">
+        <h1 style="display: inline;">Na Laochra Aeracha</h1>
+        <nav style="display: inline; float: right;">
+            <a href="index.html" style="color: white; margin-left: 20px;">Home</a>
+            <a href="gallery.html" style="color: white; margin-left: 20px;">Gallery</a>
+            <a href="news.html" style="color: white; margin-left: 20px;">News</a>
+            <a href="about.html" style="color: white; margin-left: 20px;">About</a>
+            <a href="contact.html" style="color: white; margin-left: 20px;">Contact</a>
+        </nav>
+    </div>
 
-    <!-- Main Content -->
-    <main>
-        <section class="gallery-section">
-            <h2>Our Gallery</h2>
-            <!-- Add gallery content here -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Na Laochra Aeracha</p>
-    </footer>
+    <div class="container">
+        <h2>Gallery</h2>
+        <p>Explore the moments captured at our events and training sessions.</p>
+        <img src="images/gallery1.jpg" alt="Gallery Image 1" style="max-width: 100%; height: auto;">
+        <!-- Add more gallery images as needed -->
+    </div>
 </body>
 </html>

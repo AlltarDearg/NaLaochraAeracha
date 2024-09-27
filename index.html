@@ -3,40 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Na Laochra Aeracha</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Home - Na Laochra Aeracha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #ff0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <!-- Top Banner -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Na Laochra Aeracha</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Include Header -->
+    <div class="banner">
+        <h1 style="display: inline;">Na Laochra Aeracha</h1>
+        <nav style="display: inline; float: right;">
+            <a href="index.html" style="color: white; margin-left: 20px;">Home</a>
+            <a href="gallery.html" style="color: white; margin-left: 20px;">Gallery</a>
+            <a href="news.html" style="color: white; margin-left: 20px;">News</a>
+            <a href="about.html" style="color: white; margin-left: 20px;">About</a>
+            <a href="contact.html" style="color: white; margin-left: 20px;">Contact</a>
+        </nav>
+    </div>
 
-    <!-- Main Content -->
-    <main>
-        <section class="home-section">
-            <h2>Welcome to Na Laochra Aeracha</h2>
-            <p>We are a vibrant and inclusive LGBT running club...</p>
-            <img src="logo.png" alt="Team Photo" class="main-image">
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Na Laochra Aeracha</p>
-    </footer>
+    <div class="container">
+        <h2>Welcome to Na Laochra Aeracha</h2>
+        <p>Your journey starts here with Cork's first LGBTQ+ GAA club! Join us for training sessions, social events, and much more.</p>
+        <img src="images/logo.png" alt="Na Laochra Aeracha Logo" style="max-width: 150px; height: auto;">
+    </div>
 </body>
 </html>
