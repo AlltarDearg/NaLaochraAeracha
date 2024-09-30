@@ -46,6 +46,7 @@
 
         .container {
             padding: 20px;
+            width: 100%;
             flex: 1; /* Makes text take up remaining space */
             padding-right: 20px; /* Adds space between text and image */
         }
@@ -64,17 +65,62 @@
 
         }
 
-        .content {
+        .home {
             display: flex;
+            width: 100%;
             align-items: center; /* Vertically aligns text and image */
             justify-content: space-between; /* Space between text and image */
+            background-color: rgb(254, 0, 0); /* Base color */
+        }
+
+        .join {
+            display: flex;
+            width: 100%;
+            align-items: center; /* Vertically aligns text and image */
+            justify-content: space-between; /* Space between text and image */
+            background-color: rgb(254, 0, 0); /* Base color */
         }
 
         .image img {
             max-width: 500px; /* Adjust as needed */
             height: auto; /* Ensures aspect ratio is maintained */
             padding-right: 50px;
+            flex: 1;
         }
+
+        .team-section {
+            padding: 20px;
+            text-align: center; /* Centers the title */
+            background-color: rgb(255, 255, 255); /* Base color */
+            width: 100%;
+        }
+
+        .team-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px; /* Adds space between title and grid */
+        color: #333; /* Title color */
+        }
+
+        .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Responsive grid */
+        gap: 20px;
+        }
+
+        .teamfigure {
+            display: flex; /* Use flexbox for aligning items */
+            align-items: center; /* Vertically center items */
+        }
+
+        .teamimg {
+            max-width: 150px; /* Limit image width */
+            margin-right: 10px; /* Space between image and caption */
+        }
+
+        .teamfigcaption {
+            flex: 1; /* Allow figcaption to take remaining space */
+        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -82,27 +128,80 @@
     <div class="banner">
         <img src="logo2.png" alt="Na Laochra Aeracha Logo" style="max-width: 250px; height: auto; margin-left: 20px; margin-right: 100px;">
         <nav style="display: inline; float: right;">
-            <a href="index.html" style="color: black; margin-left: 20px;">Home</a>
-            <a href="gallery.html" style="color: black; margin-left: 20px;">Gallery</a>
-            <a href="news.html" style="color: black; margin-left: 20px;">News</a>
-            <a href="contact.html" style="color: black; margin-left: 20px;">Contact</a>
+            <a href="#home" style="color: black; margin-left: 20px;">Home</a>
+            <a href="#team-section" style="color: black; margin-left: 20px;">Meet the Team</a>
+            <a href="#join" style="color: black; margin-left: 20px;">Join</a>
         </nav>
         <a href="https://www.facebook.com/LaochraAeracha/" target="_blank"><i class="fab fa-facebook-square" style="color: black; margin-left: 60px;"></i></a>
         <a href="https://www.instagram.com/na_laochra_aeracha/" target="_blank"><i class="fab fa-instagram" style="color: black; margin-left: 20px;"></i></a>
     </div>
 
-    <div class="content">
+    <div class="home" id="home">
         <div class="container">
             <h2>Welcome to Na Laochra Aeracha</h2>
             <p><strong>Na Laochra Aeracha</strong> is Cork’s first LGBTQ+ inclusive GAA club, founded in 2023 to create a safe and welcoming space for people of all identities to engage in Gaelic football. Our name, meaning "gay warriors/heroes," represents our pride and sense of community.</p>
             <p>Training takes place every Wednesday at the Glen Resource Centre, with Aaron Kelly as our lead coach and chairperson. Our goal is not only to build Gaelic football skills but also to create a tight-knit community where everyone, regardless of fitness level or experience, is welcomed.</p>
             <h2>Inclusivity & Fun</h2>
-            <p>Na Laochra Aeracha offers a safe space for everyone to enjoy GAA, whether you're a beginner or experienced player. With no judgment and a lot of laughter, our club is open to everyone, including LGBTQ+ allies. Some members even show up in full drag—reflecting the joyful, inclusive environment we've built!</p>
+            <p>Na Laochra Aeracha offers a safe space for everyone to enjoy GAA, whether you're a beginner or experienced player. With no judgment and a lot of laughter, our club is open to everyone, including LGBTQ+ allies. Some members even show up in full drag - reflecting the joyful, inclusive environment we've built!</p>
             <h2>Get Involved</h2>
-            <p>Our sessions are fun and challenging for all levels, and we're always looking for new members—especially women and non-binary players. Whether you're looking to learn a new skill, make friends, or just have fun, Na Laochra Aeracha welcomes you to be part of our growing community!</p>
+            <p>Our sessions are fun and challenging for all levels, and we're always looking for new members - especially women and non-binary players. Whether you're looking to learn a new skill, make friends, or just have fun, Na Laochra Aeracha welcomes you to be part of our growing community!</p>
         </div>
         <div class="image">
-            <img src="11-09-2024.jpg" alt="Training 11/09/2024" />
+            <img src="11-09-2024.png" alt="Training 11/09/2024" />
+        </div>
+    </div>
+
+    <div class="team-section" id="team-section">
+        <h2>Meet the Team</h2>
+        <div class="image-grid">
+            <figure class="teamfigure">
+                <img class="teamimg" src="aaronkelly.png" alt="Aaron Kelly (Coach)" style="max-width: 250px; height: auto;">
+            <figcaption class="teamfigcaption" style="color:#000000; margin-top: 10px; text-align: left; margin-left: 20px;">
+                <strong>Aaron Kelly - Head Coach</strong><br>
+                As a young gay man growing up in Ireland, rural Ireland in particular, Aaron faced many challenges in regards to his sexuality and his place in society. <br> <br>
+                After experiencing the Cork Rebels FC team, Aaron became interested in and began to participate in many other groups, such as the Hellhounds Rugby club, Frontrunners Cork running club and Cork Racketeers Badminton Club. <br> <br>
+                This culminated in Aaron's founding of Cork's first LGBT+ gaelic football club.
+            </figcaption>
+            </figure>
+            <figure class="teamfigure">
+                <img class="teamimg" src="aaronkelly.png" alt="Aaron Kelly (Coach)" style="max-width: 250px; height: auto;">
+                <figcaption class="teamfigcaption" style="color:#000000; margin-top: 10px; text-align: left; margin-left: 20px;">
+                    <strong>Aaron Kelly - Head Coach</strong><br>
+                    Additional description text below the bold caption. Additional description text below the bold caption. Additional description text below the bold caption.
+                </figcaption>
+            </figure>
+            <figure class="teamfigure">
+                <img class="teamimg" src="aaronkelly.png" alt="Aaron Kelly (Coach)" style="max-width: 250px; height: auto;">
+                <figcaption class="teamfigcaption" style="color:#000000; margin-top: 10px; text-align: left; margin-left: 20px;">
+                    <strong>Aaron Kelly - Head Coach</strong><br>
+                    Additional description text below the bold caption. Additional description text below the bold caption. Additional description text below the bold caption.
+                </figcaption>
+            </figure>
+            <figure class="teamfigure">
+                <img class="teamimg" src="aaronkelly.png" alt="Aaron Kelly (Coach)" style="max-width: 250px; height: auto;">
+                <figcaption class="teamfigcaption" style="color:#000000; margin-top: 10px; text-align: left; margin-left: 20px;">
+                    <strong>Aaron Kelly - Head Coach</strong><br>
+                    Additional description text below the bold caption. Additional description text below the bold caption. Additional description text below the bold caption.
+                </figcaption>
+            </figure>
+            <!-- Add more images and captions as needed -->
+        </div>
+    </div>
+
+    <div class="join" id="join">
+        <div class="container">
+            <h2>Join in!</h2>
+            <p><strong>Na Laochra Aeracha</strong> is is open to anyone, either returners or new learners. If you'd like to join, send us a message on our instagram and show up to any of our training sessions.</p>
+
+            <p>On <strong>Wedesdays</strong> we train in <strong>Glen River Park from 6:30 p.m. - 8 p.m.</strong></p>
+
+            <p>We also train on <strong>Sundays</strong> in <strong>Tramore Valley Park from 10 a.m. - 11:30 a.m.</strong></p>
+        </div>
+        <div class="image">
+            <img src="glenvalley.PNG" alt="Training 11/09/2024" style="max-width: 200px; height: auto;"/>
+        </div>
+        <div class="image"></div>
+            <img src="tramorevalley.PNG" alt="Training 11/09/2024" style="max-width: 200px; height: auto; margin-right: 50px;"/>
         </div>
     </div>
 </body>
