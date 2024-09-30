@@ -13,7 +13,7 @@ h1, h2 {
 
 /* Header Styles */
 header {
-    background-color: #e63946; /* Red Banner */
+    background-color: #c51322; /* Red Banner */
     color: white;
     padding: 20px 0;
 }
@@ -85,5 +85,16 @@ footer {
     padding: 20px 0;
     text-align: center;
     color: #333;
+}
+
+@font-face {
+    font-family: 'MeathFLF';
+    src: url('fonts/MeathFLF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'MeathFLF', sans-serif;
 }
 
