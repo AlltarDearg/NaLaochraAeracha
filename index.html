@@ -180,7 +180,8 @@
         .teamfigure {
             min-width: 100%;
             box-sizing: border-box;
-            padding: 20px;
+            padding: 0;
+            margin: 0;
             text-align: center;
         }
 
@@ -270,6 +271,22 @@
                         Additional description text below the bold caption. Additional description text below the bold caption. Additional description text below the bold caption.
                     </figcaption>
                 </figure>
+                <figure class="teamfigure">
+                    <img class="teamimg" src="aaronkelly.png" alt="Aaron Kelly - Head Coach" style="max-width: 250px; height: auto;">
+                    <figcaption class="teamfigcaption" style="color:#000000; margin-top: 10px; text-align: left; margin-left: 20px;">
+                        <strong>Aaron Kelly - Head Coach</strong><br>
+                        As a young gay man growing up in Ireland, Aaron faced many challenges in regards to his sexuality and his place in society. <br> <br>
+                        After experiencing the Cork Rebels FC team, Aaron became interested in and began to participate in many other groups, such as the Hellhounds Rugby club, Frontrunners Cork running club, and Cork Racketeers Badminton Club. <br> <br>
+                        This culminated in Aaron's founding of Cork's first LGBT+ gaelic football club.
+                    </figcaption>
+                </figure>
+                <figure class="teamfigure">
+                    <img class="teamimg" src="adambarrett.png" alt="Adam Barrett - Assistant Coach" style="max-width: 250px; height: auto;">
+                    <figcaption class="teamfigcaption" style="color:#000000; margin-top: 10px; text-align: left; margin-left: 20px;">
+                        <strong>Adam Barrett - Assistant Coach</strong><br>
+                        Additional description text below the bold caption. Additional description text below the bold caption. Additional description text below the bold caption.
+                    </figcaption>
+                </figure>
                 <!-- Add more team members as needed -->
             </div>
             <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
@@ -299,18 +316,26 @@
         function plusSlides(n) {
             const carousel = document.querySelector('.carousel');
             const slides = document.querySelectorAll('.teamfigure');
+            const totalSlides = slides.length;
+
+            // Update the current index
             currentIndex += n;
 
-            // Loop back if at the beginning or end
-            if (currentIndex >= slides.length) {
+            // If the current index exceeds the number of slides, reset it to the first slide
+            if (currentIndex >= totalSlides) {
                 currentIndex = 0;
-            } else if (currentIndex < 0) {
-                currentIndex = slides.length - 1;
             }
 
-            // Update the carousel's transform to slide
-            carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+            // If the current index is below 0, reset it to the last slide
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            }
+
+            // Calculate the correct translateX value based on the current index
+            const translateValue = -currentIndex * 100;
+            carousel.style.transform = `translateX(${translateValue}%)`;
         }
+
     </script>
 </body>
 </html>
